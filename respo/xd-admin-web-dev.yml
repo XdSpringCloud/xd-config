@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: xd-admin-web
+server:
+  port: 8601  #85开头服务提供者，86开头服务消费者
