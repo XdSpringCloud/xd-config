@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: xd-admin
+  zipkin:   #加入zipkin链路追踪
+    base-url: http://192.168.28.129:9411
+
+server:
+  port: 8084
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.28.129:8761/eureka/,http://192.168.28.129:8861/eureka/,http://192.168.28.129:8961/eureka/
